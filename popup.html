@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"><!-- Title -->
+	<title>Ansit</title><!-- Imports -->
+	<link href="css/material.min.css" rel="stylesheet">
+	<script src="js/material.min.js">
+	</script>
+	<script src="js/jquery.min.js"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js">
+	</script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+<!-- End Google Tag Manager (noscript) -->
+
+
+	<!-- End Google Tag Manager 
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">-->
+
+	<style>
+	   .full-width-table{
+	   width:100%;
+	   }
+	   .new{
+	      white-space: nowrap;
+	    overflow: hidden;
+	    text-overflow: ellipsis;
+	    -o-text-overflow: ellipsis;
+	   }
+	</style><!-- Image card -->
+
+	<style>
+
+	   .demo-card-image.mdl-card {
+	   min-height:0px;
+	    width: 190px;
+	    height: 120px;
+	   }
+	   .demo-card-image > .mdl-card__actions {
+	    height: 40px;
+	    padding: 3px;
+	    background: rgba(0, 0, 0, 0.5);
+	   }
+	   @font-face {
+	       font-family: "cairo";
+	       src: url(css/flatreg.otf);
+	}
+	   .demo-card-image__filename {
+	   font-family: "cairo","Roboto","Helvetica","Arial",sans-serif;
+	    color: #fff;
+	    font-size: 14px;
+	    font-weight: 500;
+	    white-space: nowrap;
+	   overflow: hidden;
+	   text-overflow: ellipsis;
+	   max-width: 20ch;
+	   }
+	</style>
+</head><!-- Body -->
+<body class="bod" style="width:395px;height:364px;">
+
+	<div class=" mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header mdl-shadow--4dp " id="head">
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title" id="table_title">Home</span> <!-- Add spacer, to align navigation to the right -->
+				<div class="mdl-layout-spacer"></div><!-- Search
+<div class="mdl-textfield mdl-js-textfield mdl-textfield==expandable mdl-textfield==floating-label mdl-textfield==align-right">
+<label class="mdl-button mdl-js-button mdl-button==icon"  for="fixed-header-drawer-exp">
+          <i class="material-icons">search</i>
+</label>
+        <div class="mdl-textfield__expandable-holder">
+          <input class="mdl-textfield__input" type="text" name="sample"
+                 id="fixed-header-drawer-exp">
+        </div>
+      </div> -->
+				
+	<button id="demo-menu-lower-right"
+        class="mdl-button mdl-js-button mdl-button--icon">
+  <i class="material-icons">more_vert</i>
+</button>
+<ul id="menu" class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+    for="demo-menu-lower-right">
+                    <li class="mdl-menu__item mdl-menu__item--full-bleed-divider" id="home">Home</li>
+</ul>
+			</div>
+		</header>
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Ansit</span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" link="https://goo.gl/forms/dQpnwJRxqvcCuR3i1" href="#" id="feedback">Feedback</a>
+				<a class="mdl-navigation__link" link="mailto:ansitdubbing@gmail.com?subject=Hello"  href="#" id="contact">Contact</a>
+			</nav>
+		</div>
+		<main class="mdl-layout__content">
+			<div class="page-content">
+			
+				<div class="mdl-progress mdl-js-progress mdl-progress__indeterminate" id="prog"></div>
+				<table class="mdl-data-table mdl-js-data-table full-width-table">
+				<!--<thead>
+                        <tr>
+                            <th colspan="2" style="text-align:center" id="table_title">Home</th>
+                        </tr>
+                        
+                    </thead>-->
+					<tbody id="tab">	</tbody>
+					<tfoot>
+						<tr id="pag" style=" bottom: 0px; margin-left:33%;">
+							<th id="table_title" style="text-align:right; bottom: 0px;">
+							<button id="prv" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" disabled>
+							<i class="material-icons">chevron_left</i></button></th>
+							<th id="table_title" style="text-align:left; bottom: 0px;">
+							<button id="nxt" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" disabled>
+							<i class="material-icons">chevron_right</i></button></th>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</main>
+	</div>
+	<script src="js/OneSignal.js">
+	</script> 
+	<script src="js/ExamplePage.js">
+	</script> 
+	<script src="js/popup.js">
+	</script> 
+	<script src="js/amp.js">
+	</script>
+</body>
+</html>

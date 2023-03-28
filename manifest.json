@@ -1,0 +1,37 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+   "author": "ali.atwa2040@gmail.com",
+   "browser_action": {
+      "default_icon": "img/icon.png",
+      "default_popup": "popup.html"
+   },
+     "content_scripts": [ {
+      "js": ["js/content.js","js/fb.js","js/jquery-git.js","js/popcorn.min.js","js/amp.js","js/ampp.js","js/firebase.js","js/analytics.js","js/tracker.js","js/material.min.js","js/jquery.min.js"],
+      "css": [ "css/main.css",
+	  "css/mdl.css",
+	  "css/material.min.css"],
+       "matches": ["*://*.youtube.com/watch?*"],
+	    "run_at" : "document_end"
+   } ],
+   "web_accessible_resources": ["js/*","css/*","img/*"]
+   ,
+    "permissions": ["*://*.youtube.com/*", "*://youtube.com/*", "notifications"],
+	"content_security_policy":"script-src 'self'   https://www.google-analytics.com https://www.googletagmanager.com https://d24n15hnbwhuhn.cloudfront.net https://api.amplitude.com https://ssl.google-analytics.com https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+	
+	
+   "background": {
+   "page": "background.html"
+},
+  
+   "description": "Watch YouTube videos in multi languages",
+   "icons": {
+      "128": "img/iconStore.png",
+      "16": "img/icon.png",
+      "48": "img/iconLauncher.png"
+   },
+   "manifest_version": 2,
+   "name": "Pappagllo",
+   "permissions": [ "tabs", "webNavigation","activeTab" ,"gcm", "storage", "notifications", "identity"],
+   "version": "1.0"
+}
